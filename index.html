@@ -1,14 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BizCraft</title>
-    <link href="./src/css/style.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BizCraft</title>
+  <link href="./src/css/style.css" rel="stylesheet" />
+  <script src="./src/js/navbar.js" defer></script>
 </head>
+
 <body>
-    <h1 class="text-3xl font-bold underline border-2 p-20 rounded-2xl m-20 bg-amber-400 text-amber-950 text-center">
-    Hello world!
-  </h1>
+  <header class="sticky top-0 z-50 bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <!------------- logo ------------>
+      <a href="#" class="flex items-center"><img class="h-8" src="./src/assets/images/logo.png"
+          alt="BizCraft logo" /></a>
+
+      <nav class="flex gap-12 items-center h-20">
+        <ul class="hidden lg:flex items-center gap-4 font-medium text-[#212121]">
+          <li>
+            <a href=""
+              class="[text-shadow:0px_4px_4px_#00000040] font-bold hover:text-blue-600 transition duration-300">Dashboard</a>
+          </li>
+
+          <li class="flex items-center gap-1 justify-center">
+            <a href="#"></a>Features & Benefits
+            <img src="./src/assets/images/Vector-arrow-icon.png" alt="" />
+          </li>
+
+          <li class="flex items-center gap-1 justify-center">
+            <a href="#"></a>Templates
+            <img src="./src/assets/images/Vector-arrow-icon.png" alt="" />
+          </li>
+
+          <li><a href="#"></a>Blogs</li>
+          <li><a href="#"></a>About us</li>
+        </ul>
+
+        <div class="hidden lg:flex items-center justify-center gap-4 font-medium text-[#212121]">
+          <button aria-label="Search">
+            <img class="h-6 w-6" src="./src/assets/images/search-Icon.png" alt="" />
+          </button>
+          <a class="px-4 py-1 border border-[#E0E0E0] rounded-4xl text-[#5D5FEF] hover:bg-blue-500 hover:text-white transition duration-300"
+            href="#">Login</a>
+          <a class="px-4 py-1.5 bg-[#FF0000] text-white rounded-4xl hover:bg-blue-600 transition duration-300"
+            href="#">Try for Free</a>
+        </div>
+      </nav>
+      <!-- <----------------------For Mobile Menu----------------------->
+      <button id="menu-btn" class="lg:hidden flex flex-col h-6 w-6 cursor-pointer">
+        <img id="hamburger-icon" src="./src/assets/images/hamburger-icon.png" alt="hamburger menu" />
+
+        <img id="close-icon" class="h-4 w-4 hidden" src="./src/assets/images/close-icon.png" alt="close icon" />
+      </button>
+    </div>
+    <!-- <----------------------For Mobile Menu----------------------->
+
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+      <ul class="flex flex-col p-6 gap-5 font-medium">
+        <li><a href="#">Dashboard</a></li>
+
+        <li class="flex items-center gap-1">
+          <a href="#">Features & Benefits</a>
+          <img src="./src/assets/images/Vector-arrow-icon.png" alt="" />
+        </li>
+
+        <li class="flex items-center gap-1">
+          <a href="#">Templates</a>
+          <img src="./src/assets/images/Vector-arrow-icon.png" alt="" />
+        </li>
+
+        <li><a href="#">Blogs</a></li>
+
+        <li><a href="#">About us</a></li>
+        <li>
+          <button>
+            <img src="./src/assets/images/search-Icon.png" class="w-6 h-6" alt="" />
+          </button>
+        </li>
+
+        <li>
+          <a href="#" class="block text-center border border-[#E0E0E0] rounded-full py-2 text-[#5D5FEF]">
+            Login
+          </a>
+        </li>
+        <li>
+          <a href="#" class="block text-center bg-red-500 text-white rounded-full py-2">
+            Try for Free
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- <----------------------main section start------------------------------------->
+  <main>
+    <!-- <----------------------Hero section start------------------------------------->
+    <section class="hero-bg pt-16 pb-88 sm:pb-68 relative">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- hero content  -->
+        <div class="text-center text-white">
+          <h1 class="mx-auto text-2xl md:text-3xl lg:text-4xl font-extrabold">
+            20,000+ Templates You Need to Plan, Start,
+            <br class="hidden sm:block" />
+            Manage & Grow Your Business, in One Place.
+          </h1>
+          <p class="mt-4 text-sm md:text-base font-semibold mb-6 lg:mb-10">
+            Full Customizable business documents compatible with all formats
+          </p>
+          <a href="#"
+            class="group px-5 py-3 lg:px-7 lg:py-4 bg-white rounded-full text-[#2F2F2F] font-bold text-base lg:text-xl inline-flex items-center gap-2 hover:bg-red-500 hover:text-white transition duration-300">Get
+            Started Free
+            <img src="./src/assets/images/Vector 3-right-arrow.svg" alt=""
+              class="h-6 w-6 lg:h-7 lg:w-7 p-2 rounded-full bg-[#5D5FEF] group-hover:bg-[#799FCB] transition duration-300" /></a>
+        </div>
+      </div>
+
+      <!--------------- Floating Card part start------------>
+      <div class="mt-10 mx-auto w-full px-4 max-w-5xl absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2">
+        <div class="bg-white rounded-3xl text-center shadow-2xl p-6">
+          <p class="text-lg font-medium text-[#828282]"> Full Customizable business documents compatible with </p>
+          <div class="flex items-center mt-6">
+            <div class="flex-1 h-px bg-[#DADADA]"></div>
+            <div
+              class="flex items-center justify-center gap-4 px-4 py-2 sm:px-6 sm:py-3 border border-[#E7E7E7] mx-auto rounded-4xl">
+              <img src="./src/assets/images/ms-word-logo.png" alt="" class="h-8 w-6 object-contain" /> <img
+                src="./src/assets/images/ms-excel-logo.png" alt="" class="h-8 w-6 object-contain" /> <img
+                src="./src/assets/images/ms-doc-logo.png" alt="" class="h-8 w-6 object-contain" /> <img
+                src="./src/assets/images/ms-pen-logo.png" alt="" class="h-8 w-6 object-contain" /> <img
+                src="./src/assets/images/ms-graph-logo.png" alt="" class="h-8 w-6 object-contain" /> </div>
+            <div class="flex-1 h-px bg-[#DADADA]"></div>
+          </div> 
+          <!----------------------grid partition start--------------->
+
+          <div class="grid grid-cols-12 mt-6 gap-4 lg:gap-8">
+            <div class="col-span-12 min-[922px]:col-span-7 min-w-0">
+              <p class="text-base xl:text-lg font-normal text-start"><span class="text-[#333333] font-bold">20,000+</span> HR
+                Templates To Save Time & Efforts content reaches the right people. Built-in features such as.</p>
+              <div class="flex flex-col gap-6 items-start">
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 mt-6 w-full md:text-base text-sm min-w-0">
+                  <li class="flex items-center gap-2 min-w-0"><img src="./src/assets/images/arrow-icon-with-circle.png"
+                      alt=""><span>Employee Policies</span></li>
+                  <li class="flex items-center gap-2 "><img src="./src/assets/images/arrow-icon-with-circle.png"
+                      alt=""><span>Statutory</span></li>
+                  <li class="flex items-center gap-2 min-w-0"><img src="./src/assets/images/arrow-icon-with-circle.png"
+                      alt=""><span>HR Forms</span></li>
+                  <li class="flex items-center gap-2 min-w-0"><img src="./src/assets/images/arrow-icon-with-circle.png"
+                      alt=""><span>Employee Compensation</span></li>
+                      <li class="flex items-center gap-2 min-w-0"><img src="./src/assets/images/arrow-icon-with-circle.png"
+                      alt=""><span>Job Descriptions</span></li>
+                  <li class="flex items-center gap-2 min-w-0"><img src="./src/assets/images/arrow-icon-with-circle.png"
+                      alt=""><span>HR Templates & Policies</span></li>
+                  <li class="flex items-center gap-2 min-w-0"><img src="./src/assets/images/arrow-icon-with-circle.png"
+                      alt=""><span>Finance & Accounting</span></li>
+                  <li class="flex items-center gap-2 min-w-0 "><img src="./src/assets/images/arrow-icon-with-circle.png"
+                      alt=""><span>Legal Agreements</span></li>
+                </ul>
+                 <a class="md:text-base text-sm px-4 py-2 bg-[#FF0000] text-white rounded-4xl hover:bg-blue-600 transition duration-300"
+            href="#">BUY NOW FOR 3,499</a>
+              </div>
+            </div>
+              <div class="min-[870px]:col-span-5 min-[922px]:md:block hidden"> 
+              <img src="./src/assets/images/computer-image.png" alt="" class="w-full max-w-md"> 
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
 </body>
+
 </html>
