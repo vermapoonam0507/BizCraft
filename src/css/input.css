@@ -10,4 +10,93 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* min-height:100vh; */
 }
+
+
+/* -------------------slider css -------------- */
+
+.mySwiper .swiper-slide {
+    width: auto !important;
+}
+
+.swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+/* .mySwiper {
+    max-width: 990px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.mySwiper .swiper-wrapper {
+    align-items: center;
+}
+
+.mySwiper .swiper-slide {
+    width: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySwiper img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+
+.slider-wrapper{
+    position: relative;
+    max-width: 990px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider-wrapper::before,
+.slider-wrapper::after{
+    content:"";
+    position:absolute;
+    top:0;
+    width:80px;
+    height:100%;
+    z-index:10;
+    pointer-events:none;
+}
+
+.slider-wrapper::before{
+    left:0;
+    background:linear-gradient(to right,#fff,transparent);
+}
+
+.slider-wrapper::after{
+    right:0;
+    background:linear-gradient(to left,#fff,transparent);
+}
+
+.swiper-wrapper{
+    transition-timing-function: linear !important;
+}
+
+.slider-wrapper::before,
+.slider-wrapper::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.slider-wrapper::before{
+    left: 0;
+    background: linear-gradient(to right, #f8f9fc 0%, rgba(248,249,252,0) 100%);
+}
+
+.slider-wrapper::after{
+    right: 0;
+    background: linear-gradient(to left, #f8f9fc 0%, rgba(248,249,252,0) 100%);
+} */

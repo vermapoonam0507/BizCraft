@@ -3,13 +3,14 @@
     "dev": "concurrently \"npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/style.css --watch\" \"browser-sync start --server . --files './*.html, ./src/css/*.css, ./src/js/*.js' --startPath index.html\"",
     "build": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/style.css --minify"
   },
-  
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
     "browser-sync": "^3.0.4",
-    "concurrently": "^10.0.3"
+    "concurrently": "^10.0.3",
+    "prettier": "^3.9.6",
+    "prettier-plugin-tailwindcss": "^0.8.1"
   }
 }
